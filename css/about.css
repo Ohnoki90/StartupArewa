@@ -20,7 +20,7 @@ body {
   background: #FEFEFF
 }
 
-@media only screen and (min-width: 1360px) {
+@media only screen and (max-width: 1360px) {
   .header {
     background-image: url('./Assets/Path 622.svg');
     background-repeat: no-repeat;
@@ -512,13 +512,13 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   body {
     width: 100%;
   }
 
   .header {
-    background-image: url('./Assets/Path 622.svg');
+    background-image: url('../Assets/Path 622.svg');
     background-repeat: no-repeat;
     background-size: 90%;
     height: 100vh;
@@ -629,7 +629,7 @@ body {
   }
 
   .mission-content__item {
-    background-image: url('./Assets/Rectangle 196.svg');
+    background-image: url('../Assets/Rectangle 196.svg');
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: 20em;
@@ -660,7 +660,7 @@ body {
 
   /* services section */
   .services__content {
-    background-image: url('./Assets/Group-89.svg');
+    background-image: url('../Assets/Group-89.svg');
     background-size: 110%;
     background-repeat: no-repeat;
     background-position-x: -15em;
@@ -738,7 +738,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    top: -3em;
     height: 70vh;
   }
 
@@ -780,13 +779,12 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url('./Assets/Layer-2.svg');
+    background-image: url('../Assets/Layer-2.svg');
     background-position: center;
     background-size: 65%;
     background-repeat: no-repeat;
     height: 120vh;
     position: relative;
-    top: -3em;
   }
 
   .contact-image__container {
@@ -1114,15 +1112,15 @@ body {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   body {
     width: 100%;
   }
   .header {
-    background-image: url('./Assets/Path-622.svg');
+    background-image: url('../Assets/Path 622.svg');
     background-repeat: no-repeat;
     background-size: 90%;
-    height: 100vh; 
+    height: 110vh; 
     
   }
   
@@ -1156,6 +1154,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
+    right: 2em;
   }
   nav ul li {
     display: flex;
@@ -1194,12 +1194,22 @@ body {
   /* illustration */
   .header-img {
     width: 20em;
-    height: 20em;
+    height: 22em;
     position: relative;
     top: .5em;
   }
 
   /* missions section */
+  .mission-content__item {
+    background-image: url('../Assets/Rectangle 196.svg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: 28em;
+    height: 50vh;
+    position: relative;
+    top: .5em;
+  }
+
   .mission-text {
     display: flex;
     justify-content: space-evenly;
@@ -1211,23 +1221,12 @@ body {
     background-color: #A6CE45;
     margin-top: 3em;
     position: relative;
-    left: 7em;
+    left: 9em;
     border: none;
   }
   .mission-text p {
     font-size: 12px;
     font-weight: 500;
-  }
-  
-  .mission-content__item {
-    background-image: url('./Assets/Rectangle 196.svg');
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position-x: 20em;
-    height: 50vh;
-    position: relative;
-    top: -3em;
-
   }
   
   .mission-content {
@@ -1237,7 +1236,7 @@ body {
   }
   
   .mission-content h2 {
-    margin-top: 3em;
+    margin-top: 2em;
   }
   .mission-content p {
     margin-top: 11em;
@@ -1245,18 +1244,19 @@ body {
     font-size: 14px;
     font-weight: 400;
     position: relative;
-    right:5em;
+    right: 4em;
   }
 
   /* services section */
   .services__content {
-    background-image: url('./Assets/Group-89.svg');
-    background-size: 110% ;
+    background-image: url('../Assets/Group-89.svg');
+    background-size: 90% ;
     background-repeat: no-repeat;
     background-position-x: -15em;
     height: 140vh;
     width: 100vw;
     position: relative;
+    
   }
   .services__heading {
     align-items: center;
@@ -1295,8 +1295,8 @@ body {
   
   .card {
     position: relative;
-    width: 200px;
-    height: 250px;
+    width: 260px;
+    height: 220px;
     overflow: hidden;
     margin-top: rem;
     padding: 2rem;
@@ -1324,7 +1324,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    top: -3em;
+    top: -1em;
     height: 70vh;
   }
   
@@ -1348,7 +1348,7 @@ body {
   .team__content p{
     font-size: 12px;
     margin-top: 3em;
-    font-weight: 600;
+    font-weight: 500;
   }
   .team__content a{
     font-size: 16px;
@@ -1364,9 +1364,9 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url('./Assets/Layer-2.svg');
+    background-image: url('../Assets/Layer-2.svg');
     background-position: center;
-    background-size: 65%;
+    background-size: 48%;
     background-repeat: no-repeat;
     height: 120vh;
     position: relative;
@@ -1695,12 +1695,195 @@ body {
 @media only screen and (max-width: 548px) {
 
 }
+
 @media only screen and (max-width: 411px) {
   .header {
-    background-image: url('./Assets/Path 622.svg');
+    background-image: url('../Assets/Path 622.svg');
     background-repeat: no-repeat;
     background-size: 110% ;
     background-position-x: -5px;
+    height: 50vh;
+    width: 100%;
+  }
+  .ham-icon {
+    display: block !important;
+    width: 3em;
+    height: 3em;
+    position: relative;
+    top: 1em;
+  }
+  
+  ul li a {
+    display: none;
+  }
+  .startup-logo {
+    width: 5em;
+    height: 2.5em;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .navigation img {
+    margin-top: 1em;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heading-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 4em;
+    width: 100%;
+  }
+  .heading-container h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .heading-text {
+    width: 320px;
+    position: relative;
+    align-items: center;
+    top: -2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading-text p{
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 2em;
+    flex-wrap: wrap;
+  }
+  /* illustration */
+  .header-img {
+    display: none;
+  }
+
+  /* missions section */
+  .mission-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .left-line {
+    display: none;
+  }
+  .mission-text p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .mission-content__item {
+    background-image: url('../Assets/Rectangle 196.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position-x: -.15em; */
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    top: 4em;
+  }
+  
+  .mission-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .mission-content h2 {
+    margin-top: 3em;
+    font-size: 1em;
+  }
+  .mission-content p {
+    font-size: 18px;
+    margin-top: 3em;
+    font-weight: 600;
+    position: relative;
+    bottom: 1em;
+  }
+  /* services section */
+  .services__content {
+    width: 100%;
+    position: relative;
+  }
+  .services__heading {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .services h2{
+    font-size: 3em;
+    font-weight: 700;
+  }
+  
+  .services p {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 4em;
+  }
+  
+  /* card view */
+  .card p{
+    font-size: 12px;
+  }
+  
+  .card-section {
+    margin-top: 2.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+    margin-top: rem;
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    box-shadow: 0 5px 20px rgba(156, 151, 151, 0.9);
+    border-radius: 10px;
+  }
+    .card h2{
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0px 0px 2px rgba(255,255,255,0.7);
+    }
+    .card p {
+      font-weight: 300;
+      line-height: 1.75;
+      text-shadow: 0px 0px 1px rgba(255,255,255,0.7);
+      margin-top: 1em;
+    }
+
+}
+@media only screen and (min-width: 320px) {
+  .header {
+    background-image: url('../Assets/Path 622.svg');
+    background-repeat: no-repeat;
+    background-size: 100% ;
     height: 50vh;
     width: 100%;
   }
