@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
-  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Code|Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./button.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
@@ -26,30 +26,26 @@
 <body>
     <section>
     <div class="header">
-    <nav class="navigation">
-        <a href="#">
-            <img src="./Assets/startup-logo.png" alt="startup-logo" class="startup-logo" />
-          </a>
-
-        <ul class="">
-            <li class="">
-              <a class="" href="index.html">Home</a>
-            </li>
-            <li class="">
-              <a class="" href="#">Community</a>
-            </li>
-            <li class="">
-              <a class="" href="about.html">About Us</a>
-            </li>
-            <li class="">
-              <a class="" href="blog.html">Blog</a>
-            </li>
-            <li class="">
-              <a href="#" class=" contact-btn" tabindex="1" >Contact Us</a>
-            </li>
-          </ul>
-          <i class="fa fa-hamburger ham-icon" style="display: none"></i>
-          </nav>
+        <header class="site-navbar about-heading" role="banner">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-4 site-logo">
+                  <a href="index.html" class="m-1"><img src="./images/startup-logo.svg"/></a>
+                </div>
+      
+                <div class="col-8 text-right">
+                  <nav class="site-navigation" role="navigation">
+                    <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block mb-0">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#">Community</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="contact.html" class="contact-btn">Contact Us</a></li>
+                    </ul>
+                  </nav>
+                </div>
+            </div>
+          </header>
   
         <div class="heading-container">
           <div class="heading-text">
@@ -198,53 +194,54 @@
 
 
   <!-- footer section -->
-  <footer class="site-footer">
-    
-      <div class="bd-footer__links">
-        <div class="logo__container">
-          <a href="#">
-            <img src="./Assets/startup-logo.png" alt="startup-logo" />
-          </a>
+  <div class="site-footer p-0 pt-3">
+    <div class="container">
+      <div class="row mb-0">
+        <div class="col-md-3">
+         <img src="./images/startup-logo.svg" style="width: 12em; height: 10em;"/>
         </div>
-
-        <div class="links__container">
-            <div class="links__content">
-                <h6>Community</h6>
-                <ul class="footer-links">
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Forums</a></li>
-                  <li><a href="#">Arewa Hubs</a></li>
-                </ul>
-              </div>
-      
-              <div class="links__content">
-                <h6>About Us</h6>
-                <ul class="footer-links">
-                  <li><a href="team.html">Our Team</a></li>
-                  <li><a href="#">Plans & Pricing</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="#">news</a></li>
-                </ul>
-              </div>
-        </div>
-    </div>
-    <hr>
-    <div class="socials">
-        <div class="">
-          <p class="copyright-text">Startup Arewa @ 2019</p>
-        </div>
-
-        <div class="">
-          <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-youtube-play"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        <div class="col-md-3 justify-content-between row ml-auto mr-5">
+          <!-- <h3 class="footer-heading mb-4">Navigation</h3> -->
+          <ul class="list-unstyled float-left ">
+            <h4>Community</h4>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Sevices</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Arewa Hubs</a></li>
           </ul>
+          <ul class="list-unstyled float-left">
+            <h4>About Us </h4>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="#">Plan & Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <!-- <hr class="mt-0" /> -->
+
+      <div class="row pt-0 pb-0 mb-0 border-top">
+        <div class="col-3 text-center">
+          <p>
+            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved
+            </p>
+        </div>
+
+        <div class="col-md-3 ml-auto">
+          <div>
+            <p class="footer-links">
+              <a href="#"><span class="icon-facebook pt-2 pr-2 pb-2 pl-0"></span></a>
+              <a href="#"><span class="icon-twitter p-2"></span></a>
+              <a href="#"><span class="icon-instagram p-2"></span></a>
+              <a href="#"><span class="icon-linkedin p-2"></span></a>
+              <a href="#"><span class="icon-envelope p-2"></span></a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-</footer>
+  </div>
 </body>
 
 </html>
