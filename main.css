@@ -1,3 +1,5 @@
+/* please do no use this page */
+
 @media only screen and (min-width: 1024px ) {
   .header {
     background-image: url('./Assets/Path-622.svg');
@@ -471,4 +473,321 @@
       justify-content: space-between;
   }
   
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 640px){
+  
+}
+   
+@media (min-width: 548px) {
+
+}
+
+@media (max-width: 411px) {
+  .header {
+    background-image: url('../Assets/Path 622.svg');
+    background-repeat: no-repeat;
+    background-size: 110% ;
+    background-position-x: -5px;
+    height: 50vh;
+    width: 100%;
+  }
+  .about-heading {
+    background-color: transparent !important;
+  }
+  
+  .heading-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 4em;
+    width: 100%;
+  }
+  .heading-container h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .heading-text {
+    width: 320px;
+    position: relative;
+    align-items: center;
+    top: -2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading-text p{
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 2em;
+    flex-wrap: wrap;
+  }
+  /* illustration */
+  .header-img {
+    display: none;
+  }
+
+  /* missions section */
+  .mission-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .left-line {
+    display: none;
+  }
+
+  .mission-text p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .mission-content__item {
+    background-image: url('../Assets/Rectangle 196.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position-x: -.15em; */
+    /* height: 60vh; */
+    width: 100%;
+    position: relative;
+    top: 4em;
+  }
+  
+  .mission-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .mission-content h2 {
+    margin-top: 3em;
+    font-size: 2em;
+  }
+
+  
+  .mission-content p {
+    font-size: 18px;
+    margin-top: 3em;
+    font-weight: 600;
+    position: relative;
+    bottom: 1em;
+  }
+  /* services section */
+  .services__content {
+    width: 100%;
+    position: relative;
+  }
+  .services__heading {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .services h2{
+    font-size: 3em;
+    font-weight: 700;
+  }
+  
+  .services p {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 4em;
+  }
+  
+  /* card view */
+  .card p{
+    font-size: 12px;
+  }
+  
+  .card-section {
+    margin-top: 2.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+    margin-top: rem;
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    box-shadow: 0 5px 20px rgba(156, 151, 151, 0.9);
+    border-radius: 10px;
+  }
+    .card h2{
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0px 0px 2px rgba(255,255,255,0.7);
+    }
+    .card p {
+      font-weight: 300;
+      line-height: 1.75;
+      text-shadow: 0px 0px 1px rgba(255,255,255,0.7);
+      margin-top: 1em;
+    }
+
+}
+@media (min-width: 320px)  {
+  .header {
+    background-image: url('../Assets/Path 622.svg');
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    height: 50vh;
+    width: 100%;
+  }
+  .about-heading {
+    background-color: transparent !important;
+  }
+  
+  .heading-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 4em;
+    width: 100%;
+  }
+  .heading-container h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .heading-text {
+    width: 320px;
+    position: relative;
+    align-items: center;
+    top: -2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading-text p{
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 2em;
+    flex-wrap: wrap;
+  }
+  /* illustration */
+  .header-img {
+    display: none;
+  }
+
+  /* missions section */
+  .mission-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .left-line {
+    display: none;
+  }
+  .mission-text p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .mission-content__item {
+    background-image: url('./Assets/Rectangle 196.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: -.15em;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    top: 5em;
+  }
+  
+  .mission-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .mission-content h2 {
+    margin-top: 3em;
+    font-size: 1em;
+  }
+  .mission-content p {
+    font-size: 18px;
+    margin-top: 3em;
+    font-weight: 600;
+    position: relative;
+    bottom: 1em;
+  }
+  /* services section */
+  .services__content {
+    width: 100%;
+    position: relative;
+  }
+  .services__heading {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .services h2{
+    font-size: 3em;
+    font-weight: 700;
+  }
+  
+  .services p {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 4em;
+  }
+  
+  /* card view */
+  .card p{
+    font-size: 12px;
+  }
+  
+  .card-section {
+    margin-top: 2.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+    margin-top: rem;
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    box-shadow: 0 5px 20px rgba(156, 151, 151, 0.9);
+    border-radius: 10px;
+  }
+    .card h2{
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0px 0px 2px rgba(255,255,255,0.7);
+    }
+    .card p {
+      font-weight: 300;
+      line-height: 1.75;
+      text-shadow: 0px 0px 1px rgba(255,255,255,0.7);
+      margin-top: 1em;
+    }
+
 }
