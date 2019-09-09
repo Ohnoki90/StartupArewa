@@ -20,9 +20,9 @@ body {
   background: #FEFEFF
 }
 
-@media only screen and (max-width: 1360px) {
+@media only screen and (min-width: 1360px) {
   .header {
-    background-image: url('./Assets/Path 622.svg');
+    background-image: url('../Assets/Path 622.svg');
     background-repeat: no-repeat;
     background-size: 70% ;
     background-position-x: -5px;
@@ -90,7 +90,7 @@ body {
   }
   
   .mission-content__item {
-    background-image: url('./Assets/Rectangle 196.svg');
+    background-image: url('../Assets/Rectangle 196.svg');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position-x: 39em;
@@ -119,7 +119,7 @@ body {
 
   /* services section */
   .services__content {
-    background-image: url('./Assets/Group-89.svg');
+    background-image: url('../Assets/Group-89.svg');
     background-size: 80% ;
     background-repeat: no-repeat;
     background-position-x: -25em;
@@ -231,7 +231,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url('./Assets/Layer-2.svg');
+    background-image: url('../Assets/Layer-2.svg');
     background-position: center;
     background-size: 45%;
     background-repeat: no-repeat;
@@ -1312,7 +1312,7 @@ body {
 
 @media only screen and (min-width: 1024px) {
   .header {
-    background-image: url('./Assets/Path 622.svg');
+    background-image: url('../Assets/Path 622.svg');
     background-repeat: no-repeat;
     background-size: 70% ;
     background-position-x: -5px;
@@ -1380,7 +1380,7 @@ body {
   }
   
   .mission-content__item {
-    background-image: url('./Assets/Rectangle 196.svg');
+    background-image: url('../Assets/Rectangle 196.svg');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position-x: 39em;
@@ -1409,7 +1409,7 @@ body {
 
   /* services section */
   .services__content {
-    background-image: url('./Assets/Group-89.svg');
+    background-image: url('../Assets/Group-89.svg');
     background-size: 80% ;
     background-repeat: no-repeat;
     background-position-x: -25em;
@@ -1521,7 +1521,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url('./Assets/Layer-2.svg');
+    background-image: url('../Assets/Layer-2.svg');
     background-position: center;
     background-size: 45%;
     background-repeat: no-repeat;
@@ -1670,4 +1670,351 @@ body {
   }
   
   /* footer section  */
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    width: 100%;
+    align-items: center;
+  }
+  .header {
+    background-image: url('../Assets/Path 622.svg');
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    height: 80vh;
+    width: 100%;
+  }
+  .about-heading {
+    background-color: transparent !important;
+  }
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 3em;
+    width: 100%;
+    left: 1em;
+  }
+  .heading-container h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .heading-text {
+    width: 300px;
+    position: relative;
+    top: -2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heading-text p{
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 2em;
+  }
+  /* illustration */
+  .header-img {
+    display: none;
+  }
+
+  /* missions section */
+  .mission-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .left-line {
+    display: none;
+  }
+
+  .mission-text p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .mission-content__item {
+    background-image: url('../Assets/Rectangle 196.svg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    height: 60vh;
+    width: 100%;
+  }
+  
+  .mission-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .mission-content h2 {
+    margin-top: 1em;
+  }
+  .mission-content p {
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 2em;
+  }
+
+   /* services section */
+   .services__content {
+    background-image: url('../Assets/Group-89.svg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position-x: -10em;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+  }
+  .services__heading {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .services h2{
+    font-weight: 600;
+    margin-top: 1em;
+  }
+  
+  .services p {
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 1em;
+  }
+  
+  /* card view */
+  .card p{
+    font-size: 10px;
+  }
+  
+  .card-section {
+    margin-top: 2.5em;
+    display: flex;
+    flex-flow: column;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 250px;
+    height: 190px;
+    overflow: hidden;
+    margin-top: 2em;
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    box-shadow: 0 5px 20px rgba(156, 151, 151, 0.9);
+    border-radius: 10px;
+  }
+    .card h2{
+      font-size: 1rem;
+      font-weight: bold;
+      text-shadow: 0px 0px 2px rgba(255,255,255,0.7);
+    }
+    .card p {
+      font-weight: 300;
+      line-height: 1.75;
+      text-shadow: 0px 0px 1px rgba(255,255,255,0.7);
+      margin-top: .3em;
+    }
+
+  /* team section */
+  .team__container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3em;
+    position: relative;
+    top: -1em;
+    height: 100vh;
+  }
+  
+  .team__illustrations {
+    width: 10em;
+    height: 10em;
+  }
+  
+  .team__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 300px;
+  }
+  .team__content h2 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  
+  .team__content p{
+    font-size: 11px;
+    margin-top: 1em;
+    font-weight: 500;
+  }
+  .team__content a{
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    border: 1em;
+    border-radius: 1.2em;
+  }
+   /* contact section  */
+   .contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('./Assets/Layer-2.svg');
+    background-position: center;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  
+  
+  .form__section {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30em;
+    position: relative;
+  }
+  
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  }
+  
+  #contact {
+    background: #ffff;
+    border-radius: 1em;
+    padding: 25px;
+    width: 25em;
+    height: 30em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  #contact h3 {
+    display: block;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: .5em;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 70px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: .3em;
+    background: #A6CE45;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #888;
+  }
+  
+  :-moz-placeholder {
+    color: #888;
+  }
+  
+  ::-moz-placeholder {
+    color: #888;
+  }
+  
+  :-ms-input-placeholder {
+    color: #888;
+  }
+  
+  .map__container {
+    background: white;
+    width: 20em;
+    height: 30em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 1em;
+  }
 }
