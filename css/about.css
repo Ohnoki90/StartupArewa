@@ -22,6 +22,133 @@ body {
   padding: 0;
 }
 
+.header {
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 0;
+    margin: 1em;
+    display: flex;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
 .heading-container {
   align-items: center;
   display: flex;
@@ -51,7 +178,6 @@ body {
 }
 
 /* mission section  */
-
 .mission-content__item {
   position: relative;
   left: 1.5em;
@@ -298,6 +424,7 @@ fieldset {
   border-radius: 1em;
 }
 
+
 @media only screen and (min-width: 768px) {
   .header {
     background-image: url('../Assets/Path 622.svg');
@@ -306,8 +433,21 @@ fieldset {
     background-repeat: no-repeat;
     height: 85vh;
   }
+  /* contact us button */
+  .contact-btn {
+    border: .15em solid rgba(62,50,132,1);
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    padding-top: .4em !important;
+    padding-bottom: .4em !important;
+    margin: 0 !important;
+    position: relative;
+    top: .5em;
+    border-radius: 1.2em ;
+  }
   .heading-container {
     flex-direction: row;
+    display: inline-flex;
   }
   .heading-text {
     width: 350px;

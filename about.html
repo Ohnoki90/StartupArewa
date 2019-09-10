@@ -25,25 +25,18 @@
 <body>
   <section>
     <div class="header">
-      <header class="site-navbar" role="banner">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-4 site-logo">
-              <a href="index.html" class="m-1"><img src="./images/startup-logo.svg" /></a>
-            </div>
-
-            <div class="col-8 text-right">
-                <nav class="site-navigation" role="navigation">
-                  <ul class="">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html" class="contact-btn">Contact Us</a></li>
-                  </ul>
-                </nav>
-          </div>
-      </header>
+        <header class="header">
+            <a href="index.html" class="m-1 logo"><img src="./images/startup-logo.svg"/></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu mt-2">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#work">Community</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html" class="contact-btn">Contact Us</a></li>
+            </ul>
+          
 
       <div class="heading-container">
         <div class="heading-text">
@@ -58,8 +51,9 @@
           <img src="./Assets/undraw_team_spirit_hrr4.svg" class="header-img" />
         </div>
       </div>
-    </div>
-  </section>
+    </header>
+  </div>
+</section>
 
   <!-- mission section -->
   <section class="container-fluid mission-content__item">
@@ -245,6 +239,15 @@
       </div>
     </div>
   </div>
+  <script>
+  $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
+</script>
 </body>
 
 </html>
