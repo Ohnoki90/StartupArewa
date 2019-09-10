@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 
+body {
 line-height: 1.7;
 color: gray;
 font-weight: 300;
 font-size: 1rem;
 background: #FEFEFF;
-font-family: 'Roboto',
-sans-serif;
+font-family: 'Roboto',sans-serif;
 }
 
 ::-moz-selection {
@@ -74,11 +74,6 @@ h5,
   background-repeat: no-repeat;
   background-position-x: 4em;
   background-position-y: -2em;
-}
-
-.heading-text {
-  position: relative;
-  font-weight: 500;
 }
 
 .heading-image {
