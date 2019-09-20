@@ -1220,7 +1220,7 @@ fieldset {
   .header {
     background-image: url('../Assets/Path 622.svg');
     background-repeat: no-repeat;
-    background-size: 70% ;
+    background-size: 80% ;
     background-position-x: -5px;
     height: 110vh;
     width: 100%;
@@ -1234,8 +1234,7 @@ fieldset {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    position: relative;
-    top: 4em;
+    margin-top: 4em;
     width: 100%;
   }
   .heading-container h1 {
@@ -1244,25 +1243,24 @@ fieldset {
   }
   .heading-text {
     width: 500px;
-    position: relative;
-    top: -2em;
     display: flex;
     flex-direction: column;
+    margin-top: 3em;
   }
   .heading-text h1{
     margin-left: 1.5em;
+    margin-top: -1em;
   }
   .heading-text p{
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 500 !important;
     margin-top: 2em;
   }
   /* illustration */
   .header-img {
     width: 500px;
     height: 400px;
-    position: relative;
-    top: 1em;
+    margin-top: 1em;
   }
 
   /* missions section */
@@ -1270,15 +1268,6 @@ fieldset {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
-  .left-line {
-    height: .3em;
-    width: 4em;
-    background-color: #A6CE45;
-    /* margin-top: 4em; */
-    position: relative;
-    left: 5em;
-    border: none;
   }
   .mission-text p {
     font-size: 14px;
@@ -1302,13 +1291,36 @@ fieldset {
   
   .mission-content h2 {
     position: relative;
-    left: -7em;
+    left: -8em;
   }
   .mission-content p {
     font-size: 18px;
     font-weight: 600;
     position: relative;
     right: 22em;
+  }
+  .mission-content p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 15em;
+    margin-top: 2em;
+  }
+  .mission {
+    position: relative;
+    left: 65em;
+    top: -1.4em;
+  }
+  .vision {
+    position: relative;
+    left: 20em;
+    top: -1em;
+    width: 60%;
+  }
+  .vision h2 {
+    margin-bottom: 2em;
+  }
+  .vision p {
+    width: 70%;
   }
 
   /* services section */
